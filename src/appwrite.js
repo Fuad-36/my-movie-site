@@ -53,7 +53,7 @@ export const getTrendingMovies = async () => {
       tableId: `${TABLE_ID}`,
       queries: [Query.limit(5), Query.orderDesc("count")],
     });
-    console.log(result);
+    
     return result.rows;
   } catch (error) {
     console.log(error);

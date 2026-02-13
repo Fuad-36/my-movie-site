@@ -140,6 +140,48 @@
       @apply text-gray-100 font-medium text-base;
     }
   }
+  /* pagination styles */
+  .pagination {
+    @apply flex items-center justify-between border-t border-white/10 px-4 py-3 sm:px-6;
+  }
+
+  .pagination .mobile-controls {
+    @apply flex flex-1 justify-between sm:hidden;
+  }
+
+  .pagination .desktop-controls {
+    @apply hidden  sm:flex sm:flex-1 sm:items-center sm:justify-between;
+  }
+
+  .pagination .page-info {
+    @apply text-sm text-gray-300;
+  }
+
+  /* nav and buttons */
+  .pagination .page-nav {
+    @apply isolate inline-flex -space-x-px rounded-md;
+  }
+
+  .pagination .page-btn {
+    @apply relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-200 inset-ring inset-ring-gray-700 hover:bg-white/5 focus:z-20 focus:outline-offset-0;
+  }
+
+  .pagination .page-btn--icon {
+    @apply relative inline-flex items-center rounded-md px-2 py-2 text-gray-400 hover:bg-white/5;
+  }
+
+  .pagination .page-btn--current {
+    @apply relative z-10 inline-flex items-center bg-indigo-500 px-4 py-2 text-sm font-semibold text-white;
+  }
+
+  /* hidden on small screens, visible from md upwards (like original) */
+  .pagination .page-btn.hidden-md {
+    @apply hidden md:inline-flex;
+  }
+
+  .pagination .page-ellipsis {
+    @apply relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-400;
+  }
 }
 
 @utility text-gradient {
