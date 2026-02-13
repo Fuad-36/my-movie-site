@@ -1,8 +1,8 @@
 # 🎬 Movie Discovery App
 
-A modern movie discovery web application built with **React** that fetches real-time movie data from the **TMDB (The Movie Database) API**.  
+A modern movie discovery web application built with **React** that fetches real-time movie data from the **TMDB (The Movie Database) API**.
 
-The application allows users to explore movies, search efficiently with optimized performance, and view dynamically generated trending content based on user interactions.
+The application allows users to explore movies, search efficiently with optimized performance, view dynamically generated trending content, and navigate large datasets using a scalable pagination system.
 
 ---
 
@@ -17,6 +17,15 @@ The application allows users to explore movies, search efficiently with optimize
 - Displays a list of popular and discoverable movies
 - Clean and responsive UI
 - Dynamic rendering of movie posters, titles, and details
+
+### 📄 Advanced Pagination System
+- Implemented dynamic pagination for:
+  - All movies
+  - Queried (searched) movies
+- Displays page numbers with smart truncation (`...`) for large page counts
+- Handles thousands of pages efficiently
+- Scalable design that supports extremely large datasets
+- Responsive and compact UI for better usability
 
 ### 🔥 Trending Movies Section
 - Tracks most searched movies
@@ -33,15 +42,16 @@ The application allows users to explore movies, search efficiently with optimize
   - Optimize network usage
 
 - Efficient state management and conditional rendering for smooth UI updates
+- Pagination logic designed to prevent unnecessary re-renders
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend:** React
-- **API:** TMDB API
-- **Backend Service:** Appwrite
-- **Deployment:** Vercel
+- **Frontend:** React  
+- **API:** TMDB API  
+- **Backend Service:** Appwrite  
+- **Deployment:** Vercel  
 
 ---
 
@@ -55,8 +65,7 @@ The application allows users to explore movies, search efficiently with optimize
 
 - Working with third-party REST APIs
 - Implementing debouncing for performance optimization
+- Designing scalable pagination systems
 - Managing dynamic state updates in React
-- Building scalable and maintainable UI components
+- Building reusable and maintainable UI components
 - Handling asynchronous data fetching efficiently
-
-
